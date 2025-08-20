@@ -418,10 +418,15 @@ th {
 }
 
 
-/*　ここからヘッダーのスタイル　*/
+/****************************************************************************************
+ここからヘッダーのスタイル
+***************************************************************************************/
 
-.header-content {
+header {
   background-color: #50D6E1;
+
+}
+.header-content {
   display: grid;
   grid-template-columns: 1fr 117px 77px;
   column-gap: 5px;
@@ -436,7 +441,6 @@ th {
 .header-logo img {
   width: 100%;
   max-width: 300px;
-
 }
 
 .language-swithcher {
@@ -444,10 +448,11 @@ th {
   margin-top: 4px;
   position: relative;
 }
+
 .language-swithcher.-is-open ul {
   display: block;
-  
 }
+
 .language-label {
   line-height: 1.4;
   font-size: 16px;
@@ -469,11 +474,16 @@ th {
   width: 100%;
   display: none;
 }
+
 .language-swithcher li {
   border-bottom: 1px solid #707070;
   background-color: #fff;
   font-size: 16px;
   font-weight: 700;
+}
+
+.language-swithcher li a {
+  display: block;
   padding: 4px 10px 4px 10px;
 }
 
@@ -484,7 +494,6 @@ th {
 .header-nav.-is-open ul {
   display: block;
 }
-
 
 .header-nav ul {
   background-color: #fff;
@@ -498,26 +507,109 @@ th {
   text-align: center;
   display: none;
 }
+
 .header-nav li {
   border-bottom:1px solid #707070;
   font-size: 24px;
   font-weight: 700;
+}
+
+.header-nav li a {
+  display: block;
   background-size: 375px 100px;
   padding: 32px 5px;
 }
 
+/*ここからヘッダーPC*/
+@media screen and (min-width: 768px) {
 
+  header {
+    background-color: #50D6E1;
+  }
 
+  .header-content {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    column-gap: 5px;
+    position: relative;
+  }
 
+  .header-logo {
+    padding: 4px 0px 4px 0px;
+  }
 
+  .header-logo img {
+    max-width: 450px;
+  }
 
+  .language-swithcher {
+    margin-top: 0px;
+  }
 
+  .language-label{
+    font-size: 24px;
+    padding: 20px 0px 0px 0px;
+    background-position: right 37px center;
+    cursor: pointer;
+    background-size: 31px 27px;
+    height: 76px;
+    border: 1px solid #707070;
+  }
 
-/*ここからフッターのスタイル */
+  .language-swithcher ul {
+    top: 75px;
+  }
+
+  .language-swithcher li {
+    font-size: 24px;
+  }
+
+  .language-swithcher li a {
+    padding: 34px 10px 34px 10px;
+  }
+  
+  .language-swithcher li a:hover {
+    opacity: 0.5;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+  .header-nav.-is-open ul {
+    display: block;
+  }
+
+  .header-nav ul {
+    background-color: #fff;
+    width: 100%;
+    position: absolute;
+    z-index: 6;
+    top: 66px;
+    left: 0;
+    border: 1px solid #707070;
+    border-bottom: none;
+    text-align: center;
+    display: none;
+  }
+
+  .header-nav li {
+    border-bottom: 1px solid #707070;
+    font-size: 24px;
+    font-weight: 700;
+    background-size: 375px 100px;
+    padding: 32px 5px;
+  }
+}
+
+/****************************************************************************************
+ここからフッターのスタイル
+***************************************************************************************/
 
 footer {
   background-color: #F2E300;
 }
+
 .footer-content {
   position: relative;
   padding-top: 16px;
@@ -529,7 +621,7 @@ footer {
   /* margin: 0 auto; */
   column-gap: 8px;
   row-gap: 8px;
-  padding:0 18px;
+  padding: 0 18px;
 }
 
 .footer-nav ul li {
@@ -564,7 +656,6 @@ footer {
 
 .footer-nav ul li.icon6 {
   background-image: url(/../images/asset6.png);
-
 }
 
 .footer-speech{
@@ -576,7 +667,6 @@ footer {
 
 .footer-speech img {
   width: 100%;
- 
 }
 
 .footer-copyright {
@@ -586,6 +676,7 @@ footer {
   padding-bottom: 8px;
 }
 
+/*ここからフッターPC*/
 @media screen and (min-width: 768px) {
 
   .footer-content {
@@ -593,22 +684,20 @@ footer {
     max-width: 1100px;
     margin: 0 auto;
     padding-bottom: 24px;
-
   }
 
   .footer-nav ul {
     display: block;
     margin: 0 0 0 auto;
     width: 340px;
-    
   }
 
   .footer-nav ul li {
     font-size: 24px;
     background-size: 55px;
     padding: 9px 0px 9px 55px;
-    
   }
+
   .footer-nav ul li a:hover{
     opacity: 0.5;
   }
@@ -624,6 +713,7 @@ footer {
     margin-top: 36px;
     padding-bottom: 8px;
   }
+
 } 
 @media screen and (min-width: 840px) {
   .footer-speech{
