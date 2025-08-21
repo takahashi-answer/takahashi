@@ -516,17 +516,16 @@ header {
 
 .header-nav li a {
   display: block;
-  background-size: 375px 100px;
   padding: 32px 5px;
 }
 
 /*ここからヘッダーPC*/
 @media screen and (min-width: 768px) {
 
-  header {
-    background-color: #50D6E1;
-  }
+  
+}
 
+@media screen and (min-width: 1640px) {
   .header-content {
     display: grid;
     grid-template-columns: 1fr 300px;
@@ -576,29 +575,30 @@ header {
     display: none;
   }
 
-  .header-nav.-is-open ul {
-    display: block;
-  }
-
   .header-nav ul {
-    background-color: #fff;
-    width: 100%;
-    position: absolute;
-    z-index: 6;
-    top: 66px;
-    left: 0;
-    border: 1px solid #707070;
-    border-bottom: none;
-    text-align: center;
-    display: none;
+    width: auto;
+    display: flex;
+    justify-content: right;
+    top: 0px;
+    left: auto;
+    right: 299px;
+    height: 76px;
   }
 
   .header-nav li {
-    border-bottom: 1px solid #707070;
-    font-size: 24px;
-    font-weight: 700;
-    background-size: 375px 100px;
-    padding: 32px 5px;
+    border-left: 1px solid #707070;
+  }
+
+  .header-nav li:first-child {
+    border-left: none;
+  }
+
+  .header-nav li a {
+    padding: 20px 10px 0px;
+    height: 100%;
+  }
+  .header-nav li a:hover {
+    opacity: 0.5;
   }
 }
 
