@@ -520,10 +520,6 @@ header {
 }
 
 /*ここからヘッダーPC*/
-@media screen and (min-width: 768px) {
-
-  
-}
 
 @media screen and (min-width: 1640px) {
   .header-content {
@@ -721,16 +717,71 @@ footer {
   }
 }
 
+
 /****************************************************************************************
 ここからメインのスタイル
 ***************************************************************************************/
-
 
 /**ここからメインSP**/
 
 main img {
   width: 100%;
 }
+
 main iframe {
   width: 100%;
 }
+
+.contents-box {
+  background-color: #F2E300;
+  margin-top: 200px;
+  border-radius: 40px;
+  text-align: center;
+  position: relative;
+}
+.pt-lead {
+  font-size: 14px;
+  padding: 40px 17.5px 24px;
+}
+
+.pt-title {
+  font-size: 24px;
+font-family: "ab-kirigirisu", sans-serif;
+font-weight: 400;
+font-style: normal;
+color:#F13F24;
+padding: 40px 0px;
+}
+
+.pt-icon {
+  width: 80px;
+  position: absolute;
+  top: -40px;
+  right: 0px;
+}
+
+.pt-textbox {
+  margin: 32px auto 24px;
+  padding: 0px 17.5px ;
+  text-align: center;
+  /* padding: ; */
+}
+
+.pt-text {
+  display: inline-block;
+  font-size: 12px;
+  text-align: left;
+  
+}
+
+.pt-linkbutton {
+  display: inline-block;
+  background-color: #fff;
+  border: 1px solid #F13F24;
+  border-radius: 20px;
+  padding: 12px 14px;
+  margin-bottom: 40px;
+  color: #F13F24;
+  box-shadow: 0 2 0 2 rgb(241, 63, 36 / 0);
+}
+

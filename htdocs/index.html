@@ -7,6 +7,16 @@
   <link rel="stylesheet" href="/css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script>
+  (function(d) {
+    var config = {
+      kitId: 'suy5dlc',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+</script>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
 
 </head>
@@ -52,11 +62,13 @@
       </section>
       <section class="contents-box">
         <h2 class="pt-lead">大阪と言えば「あきない」商売が盛んな街です！大阪にある商店街、その数なんと300！店舗の数は11,000を上回ります！</h2>
-        <p class="pt-text">日本一の長さを誇る天神橋筋商店街や、衝撃の価格で商品が並ぶ千林筋商店街、「食」に関するものなら何でも揃う道具屋筋商店街など、それぞれの商店街ごとに個性があります。大阪市内、どこに行っても近くに必ずある商店街、ぜひ観光のついでにお立ち寄りください！</p>
+        <div class="pt-textbox">
+         <p class="pt-text">日本一の長さを誇る天神橋筋商店街や、衝撃の価格で商品が並ぶ千林筋商店街、「食」に関するものなら何でも揃う道具屋筋商店街など、それぞれの商店街ごとに個性があります。大阪市内、どこに行っても近くに必ずある商店街、ぜひ観光のついでにお立ち寄りください！</p>
+        </div>
       </section>
       <section class="contents-box">
         <div class="pt-icon">
-          <img src="/htdocs/images/event-icon.png" alt="">
+          <img src="/images/event-icon.png" alt="">
         </div>
         <h2 class="pt-title">イベント情報</h2>
         <div class="pt-slider">
@@ -94,7 +106,7 @@
         </div>
         <h2 class="pt-title">OSAKA Free Wi-Fi</h2>
         <div class="pt-image">
-          <img src="/images/osakawifi.jpg" alt="２４区のおすすめスポット">
+          <img src="/images/osakawifi.jpg" alt="OSAKA Free Wi-Fi">
         </div>
         <div class="pt-buttonbox">
           <div class="pt-linkbutton2 -icon-wifi">
@@ -113,7 +125,7 @@
         <div class="pt-officialbox">
           <div class="pt-official-image">
             <div class="pt-image-official">
-              <img src="/images/official.jpg" alt="２４区のおすすめスポット">
+              <img src="/images/official.jpg" alt="公式サイトはこちら">
             </div>
             <div class="pt-linkbutton">
               <a href="#">大阪商店街公式サイトはこちら ＞</a>
