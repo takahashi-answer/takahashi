@@ -679,7 +679,7 @@ footer {
   footer {
     margin-top: 400px;
   }
-  
+
   .footer-content {
     padding-top: 35px;
     max-width: 1100px;
@@ -809,12 +809,6 @@ main iframe {
   text-align: center;
 }
 
-/* .pt-linkbutton a:hover {
-  box-shadow: none;
-  background-color: #F13F24;
-  color: #fff;
-} */
-
 .pt-linkbutton a span {
   display: block;
   padding-right: 30px;
@@ -834,14 +828,15 @@ main iframe {
 .pt-wifiimage {
   padding: 0px 17.5px;
 }
+
 .pt-linkbutton2 {
   padding: 0 17.5px;
   margin:24px 0px;
   text-align: left;
-
 }
+
 .pt-linkbutton2 a {
-  display: inline-block;
+  display: block;
   background-color: #fff;
   border: 1px solid #F13F24;
   border-radius: 20px;
@@ -851,12 +846,12 @@ main iframe {
   width: 100%;
   box-shadow: 2px 3px 0px 0px #F13F24;
 }
+
 .pt-linkbutton2 a span {
   display: block;
   padding-right: 30px;
   position: relative;
   word-break: break-all;
-
 }
 
 .pt-linkbutton2.-icon-wifi a span::after {
@@ -871,8 +866,8 @@ main iframe {
   top: 50%;
   right: 0px;
   transform: translate(0px, -50%);
-
 }
+
 .pt-linkbutton2.-icon-search a span::after {
   display: block;
   content: "";
@@ -885,12 +880,16 @@ main iframe {
   top: 50%;
   right: 0px;
   transform: translate(0px, -50%);
+}
 
+.pt-official-image .pt-linkbutton {
+  margin: 0px 17.5px;
+  padding: 8px 0px;
+  background-color: #fff;
 }
 
 .pt-facebook {
   margin: 40px 17.5px 0px;
-
 }
 
 .pt-line-stamp {
@@ -899,6 +898,141 @@ main iframe {
 }
 
 .pt-image-official {
-  padding:0px 17px;
+  padding: 0px 17.5px;
 }
 
+/*ここからメインPC*/
+@media screen and (min-width: 768px) {
+  .contents-box {
+    border-radius: 80px;
+    margin: 200px auto;
+    max-width: 1200px;
+  }
+
+  .pt-lead {
+    font-size: 40px;
+    padding: 80px 50px 0px;
+    margin-bottom: 36px;
+  }
+
+  .pt-lead span {
+    font-size: 60px;
+  }
+
+  .pt-title {
+    font-size: 56px;
+    padding: 80px 0px 0px;
+    margin-bottom: 80px;
+  }
+
+  .pt-icon {
+    width: 200px;
+    top: -100px;
+  }
+
+  .pt-textbox {
+    margin: 56px 50px 24px;
+  }
+
+  .pt-text-lead {
+    padding:0px 50px 80px;
+  }
+
+  .pt-text {
+    font-size: 24px;
+  }
+
+  .pt-slider-images {
+    padding:0px 50px;
+  }
+
+  .pt-linkbutton {
+    font-size: 24px;
+    margin: 40px 0px 80px;
+  }
+
+  .pt-linkbutton a {
+    padding: 31px 20px;
+  }
+
+  .pt-linkbutton a:hover {
+    box-shadow: none;
+    background-color: #F13F24;
+    color: #fff;
+  }
+
+  .pt-linkbutton a span {
+    padding-right: 44px;
+  }
+
+  .pt-wifiimage {
+    padding: 0px 50px;
+  }
+
+  .pt-buttonbox {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    margin: 0px 50px;
+  }
+
+  .pt-linkbutton2 {
+    padding: 0px;
+    margin: 80px 0px;
+    font-size: 24px;
+  }
+
+  .pt-linkbutton2 a {
+    border-radius: 40px;
+    padding: 24px 28px;
+  }
+
+    .pt-linkbutton2 a:hover {
+    box-shadow: none;
+    background-color: #F13F24;
+    color: #fff;
+  }
+
+  .pt-linkbutton2 a span {
+    padding-right: 30px;
+  }
+
+  .pt-linkbutton2.-icon-wifi a span::after {
+    width: 56px;
+    height: 45px;
+    background-size: 56px 45px;
+  }
+
+  .pt-linkbutton2.-icon-search a span::after {
+    width: 56px;
+    height: 56px;
+    background-size: 56px 56px;
+  }
+
+  .pt-officialbox {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 100px;
+    margin: 0 100px;
+  }
+
+  .pt-image-official {
+    padding: 27px 30px 0px;
+    background-color: #fff;
+  }
+
+  .pt-official-image .pt-linkbutton {
+    margin: 0px 0px 0px;
+    padding: 16px 0px;
+  }
+
+  .pt-facebook {
+    margin: 0px 0px 0px;
+  }
+
+  .pt-line-stamp {
+    margin: 80px 100px 0px;
+    padding-bottom: 80px;
+  }
+
+}
