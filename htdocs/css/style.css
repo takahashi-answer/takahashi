@@ -604,6 +604,7 @@ header {
 
 footer {
   background-color: #F2E300;
+  margin-top: 160px;
 }
 
 .footer-content {
@@ -675,6 +676,10 @@ footer {
 /*ここからフッターPC*/
 @media screen and (min-width: 768px) {
 
+  footer {
+    margin-top: 400px;
+  }
+  
   .footer-content {
     padding-top: 35px;
     max-width: 1100px;
@@ -734,23 +739,34 @@ main iframe {
 
 .contents-box {
   background-color: #F2E300;
-  margin-top: 200px;
   border-radius: 40px;
-  text-align: center;
   position: relative;
+  margin:80px 10px 80px;
+  padding-bottom: 16px;
 }
+
 .pt-lead {
   font-size: 14px;
-  padding: 40px 17.5px 24px;
+  font-weight: 700;
+  padding: 24px 17.5px 0px;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.pt-lead span {
+  font-size: 24px;
+  color: #F13F24;
 }
 
 .pt-title {
   font-size: 24px;
-font-family: "ab-kirigirisu", sans-serif;
-font-weight: 400;
-font-style: normal;
-color:#F13F24;
-padding: 40px 0px;
+  font-family: "ab-kirigirisu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color:#F13F24;
+  padding: 40px 0px 0px;
+  margin-bottom: 40px;
+  text-align: center;
 }
 
 .pt-icon {
@@ -761,27 +777,128 @@ padding: 40px 0px;
 }
 
 .pt-textbox {
-  margin: 32px auto 24px;
-  padding: 0px 17.5px ;
-  text-align: center;
-  /* padding: ; */
+  margin: 32px 17.5px 24px;
+}
+
+.pt-text-lead {
+  padding:0px 17.5px 40px;
 }
 
 .pt-text {
-  display: inline-block;
   font-size: 12px;
-  text-align: left;
-  
+}
+
+.pt-slider-images {
+  padding:0px 17.5px;
 }
 
 .pt-linkbutton {
+  text-align: center;
+  margin: 24px 0px;
+}
+
+.pt-linkbutton a {
+  display: inline-block;
+  background-color: #fff;
+  border: 1px solid #F13F24;
+  border-radius: 40px;
+  padding: 12px 14px;
+  color: #F13F24;
+  font-weight: 700;
+  box-shadow: 2px 3px 0px 0px #F13F24;
+  text-align: center;
+}
+
+/* .pt-linkbutton a:hover {
+  box-shadow: none;
+  background-color: #F13F24;
+  color: #fff;
+} */
+
+.pt-linkbutton a span {
+  display: block;
+  padding-right: 30px;
+  position: relative;
+  word-break: break-all;
+}
+
+.pt-linkbutton a span::after {
+  content: "＞";
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(0px, -50%);
+}
+
+.pt-wifiimage {
+  padding: 0px 17.5px;
+}
+.pt-linkbutton2 {
+  padding: 0 17.5px;
+  margin:24px 0px;
+  text-align: left;
+
+}
+.pt-linkbutton2 a {
   display: inline-block;
   background-color: #fff;
   border: 1px solid #F13F24;
   border-radius: 20px;
   padding: 12px 14px;
-  margin-bottom: 40px;
   color: #F13F24;
-  box-shadow: 0 2 0 2 rgb(241, 63, 36 / 0);
+  font-weight: 700;
+  width: 100%;
+  box-shadow: 2px 3px 0px 0px #F13F24;
+}
+.pt-linkbutton2 a span {
+  display: block;
+  padding-right: 30px;
+  position: relative;
+  word-break: break-all;
+
+}
+
+.pt-linkbutton2.-icon-wifi a span::after {
+  display: block;
+  content: "";
+  width: 30px;
+  height: 24px;
+  background-image: url(/images/wifi.svg);
+  background-repeat: no-repeat;
+  background-size: 30px 24px;
+  position: absolute;
+  top: 50%;
+  right: 0px;
+  transform: translate(0px, -50%);
+
+}
+.pt-linkbutton2.-icon-search a span::after {
+  display: block;
+  content: "";
+  width: 30px;
+  height: 30px;
+  background-image: url(/images/search.svg);
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
+  position: absolute;
+  top: 50%;
+  right: 0px;
+  transform: translate(0px, -50%);
+
+}
+
+.pt-facebook {
+  margin: 40px 17.5px 0px;
+
+}
+
+.pt-line-stamp {
+  margin: 40px 17.5px 0px;
+  padding-bottom: 40px;
+}
+
+.pt-image-official {
+  padding:0px 17px;
 }
 
