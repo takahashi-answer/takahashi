@@ -624,7 +624,7 @@ footer {
 .footer-nav ul li {
   font-size: 12px;
   font-weight: 700;
-  background-image: url(/../images/asset1.png);
+  background-image: url(/../images/common/asset1.png);
   background-repeat: no-repeat;
   background-size: 18px;
   line-height: 1.6;
@@ -632,27 +632,27 @@ footer {
 }
 
 .footer-nav ul li.icon1 {
-  background-image: url(/../images/asset1.png);
+  background-image: url(/../images/common/asset1.png);
 }
 
 .footer-nav ul li.icon2 {
-  background-image: url(/../images/asset2.png);
+  background-image: url(/../images/common/asset2.png);
 }
 
 .footer-nav ul li.icon3 {
-  background-image: url(/../images/asset3.png);
+  background-image: url(/../images/common/asset3.png);
 }
 
 .footer-nav ul li.icon4 {
-  background-image: url(/../images/asset4.png);
+  background-image: url(/../images/common/asset4.png);
 }
 
 .footer-nav ul li.icon5 {
-  background-image: url(/../images/asset5.png);
+  background-image: url(/../images/common/asset5.png);
 }
 
 .footer-nav ul li.icon6 {
-  background-image: url(/../images/asset6.png);
+  background-image: url(/../images/common/asset6.png);
 }
 
 .footer-speech{
@@ -859,7 +859,7 @@ main iframe {
   content: "";
   width: 30px;
   height: 24px;
-  background-image: url(/images/wifi.svg);
+  background-image: url(/images/top/wifi.svg);
   background-repeat: no-repeat;
   background-size: 30px 24px;
   position: absolute;
@@ -873,7 +873,7 @@ main iframe {
   content: "";
   width: 30px;
   height: 30px;
-  background-image: url(/images/search.svg);
+  background-image: url(/images/top/search.svg);
   background-repeat: no-repeat;
   background-size: 30px 30px;
   position: absolute;
@@ -1096,4 +1096,37 @@ main iframe {
   }
 }
 
-   
+/****************************************************************************************
+ここまでメインのスタイル
+***************************************************************************************/
+
+
+/****************************************************************************************
+ここから追加の共有パーツのスタイル
+***************************************************************************************/
+
+/**ここから追加共有パーツSP**/
+
+.big-title {
+  font-size: 40px;
+  font-family: "ab-kirigirisu", sans-serif;
+  margin: 120px auto;
+
+}
+
+
+/****************************************************************************************
+ここまで追加の共有パーツのスタイル
+***************************************************************************************/
+
+/****************************************************************************************
+ここからイベント情報のスタイル
+***************************************************************************************/
+
+/**ここからメインSP**/
+
+
+
+/****************************************************************************************
+ここまでイベント情報のスタイル
+***************************************************************************************/
