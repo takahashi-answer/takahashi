@@ -888,17 +888,27 @@ main iframe {
   background-color: #fff;
 }
 
-.pt-facebook {
-  margin: 40px 17.5px 0px;
+.pt-image-official {
+  padding: 0px 17.5px;
+}
+
+.pt-facebook-image {
+  margin-top: 24px;
+}
+
+.pt-facebook-image .pt-linkbutton {
+  margin: 0px 17.5px;
+  padding: 8px 0px;
+  background-color: #fff;
+}
+
+.pt-image-facebook {
+  padding: 0px 17.5px;
 }
 
 .pt-line-stamp {
   margin: 40px 17.5px 0px;
   padding-bottom: 40px;
-}
-
-.pt-image-official {
-  padding: 0px 17.5px;
 }
 
 /*ここからメインPC*/
@@ -947,12 +957,12 @@ main iframe {
   }
 
   .pt-linkbutton {
-    font-size: 24px;
+    font-size: 20px;
     margin: 40px 0px 80px;
   }
 
   .pt-linkbutton a {
-    padding: 31px 20px;
+    padding: 20px 20px;
   }
 
   .pt-linkbutton a:hover {
@@ -1016,7 +1026,7 @@ main iframe {
     margin: 0 100px;
   }
 
-  .pt-image-official {
+    .pt-image-official {
     padding: 27px 30px 0px;
     background-color: #fff;
   }
@@ -1026,8 +1036,17 @@ main iframe {
     padding: 16px 0px;
   }
 
-  .pt-facebook {
+  .pt-facebook-image {
+    margin-top: 0px;
+  }
+    .pt-image-facebook {
+    padding: 27px 30px 0px;
+    background-color: #fff;
+  }
+
+  .pt-facebook-image .pt-linkbutton {
     margin: 0px 0px 0px;
+    padding: 16px 0px;
   }
 
   .pt-line-stamp {
@@ -1035,4 +1054,46 @@ main iframe {
     padding-bottom: 80px;
   }
 
+  /**1000px以下でのbutton2の設定**/
+  @media screen and (max-width: 1000px) {
+
+    .pt-buttonbox {
+      display: block;
+      margin: 0px 0px 80px;
+      padding: 0 50px;
+    }
+
+    .pt-linkbutton2 {
+      margin: 24px 0px;
+    }
+
+    .pt-linkbutton2 a {
+      border-radius: 30px;
+    }
+
+  }
+    /**1150px以下での公式リンクおよびfacebookの設定**/
+  @media screen and (max-width: 1150px) {
+
+    .pt-officialbox {
+      column-gap: 40px;
+      margin: 0 40px;
+    }
+
+    .pt-official-image .pt-linkbutton a span {
+      padding-right: 36px;
+      font-size: 16px;
+    }
+    .pt-facebook-image .pt-linkbutton a span {
+      padding-right: 36px;
+      font-size: 16px;
+    }
+    
+    .pt-linkbutton a {
+      padding: 16px 20px;
+    }
+    
+  }
 }
+
+   
