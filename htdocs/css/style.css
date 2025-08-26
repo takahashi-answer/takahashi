@@ -426,6 +426,7 @@ header {
   background-color: #50D6E1;
 
 }
+
 .header-content {
   display: grid;
   grid-template-columns: 1fr 117px 77px;
@@ -735,6 +736,9 @@ main iframe {
   width: 100%;
 }
 
+.subpage .contents-wrap > *:first-child {
+  margin-top: 0px;
+}
 .contents-box {
   background-color: #F2E300;
   border-radius: 40px;
@@ -844,7 +848,7 @@ main iframe {
 @media screen and (min-width: 768px) {
   
   .pt-textbox {
-    margin: 56px 50px 24px;
+    margin: 56px 50px 40px;
   }
 
   .pt-text {
@@ -1183,13 +1187,18 @@ main iframe {
 
 @media screen and (min-width: 768px){/* PCの記述　*/
 
+  .big-title {
+    font-size: 80px;
+    margin: 200px auto;
+  }
 }
 /****************************************************************************************
 ここからパンくずリストのパーツのスタイル
 ***************************************************************************************/
 
 .pt-breadcrumb {
-  margin: 0;
+  display: block;
+  margin-bottom: 24px;
   font-size: 12px;
 }
 
@@ -1212,6 +1221,20 @@ main iframe {
 
 @media screen and (min-width: 768px){/* PCの記述　*/
 
+  .pt-breadcrumb {
+    margin: 0px auto 63px;
+    font-size: 16px;
+    max-width: 1200px;
+  }
+
+  .pt-breadcrumb ol {
+    padding-left: 24px;
+  }
+
+  .pt-breadcrumb ol li::after {
+    padding: 0px 16px;
+  }
+
 }
 
 /****************************************************************************************
@@ -1222,11 +1245,16 @@ main iframe {
   font-weight: 700;
 }
 
+.-responsive {
+  display: none;
+}
+
+/* あきないグランプリの店へのリンクボタンのスタイル*/
+
 .-small a {
   padding: 8px 8px;
   font-size: 12px;
     box-shadow: 1px 1px 0px 0px #F13F24;
-
 }
 
 .-small a span {
@@ -1242,26 +1270,35 @@ main iframe {
   top: 50%;
   transform: translate(0px, -50%);
 }
+@media screen and (min-width: 768px){/* PCの記述　*/
+
+  .-small a {
+    padding: 12px 20px;
+    font-size: 16px;
+  }
+
+.-small a span {
+    padding-right: 28px;
+  }
+}
 
 /****************************************************************************************
 ここからあきないグランプリのスタイル
 ***************************************************************************************/
 
 .pt-akinaigp-image {
-  padding: 17.5px;
+  padding:0px 17.5px;
 }
 
-@media screen and (min-width: 768px){/* PCの記述　*/
-
+.pt-akinaigp-box {
+  margin: 0px 0px 40px;
+  padding: 0px 0px 50px;
 }
 
 .pt-awardyear {
   text-align: center;
   margin: 40px 0px 16px;
-}
-
-.pt-akinaigp-box {
-  margin: 0px 0px 40px;
+  font-weight: 700;
 }
 
 .pt-akinaigp-title {
@@ -1278,7 +1315,7 @@ main iframe {
 .pt-shop-location {
   padding: 0px 17.5px 8px;
   text-align: center;
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 700;
 }
 
@@ -1294,6 +1331,103 @@ main iframe {
 }
 
 @media screen and (min-width: 768px){/* PCの記述　*/
+  .pt-akinaigp-image {
+    padding: 0px 50px;
+  }
 
+  .pt-akinaigp-box {
+    margin: 0px 0px 80px;
+    padding: 0px 50px 0px;
+    display: grid;
+    column-gap: 70px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+   .pt-akinaigp-box .pt-textbox {
+    margin: 0px;
+  }
+
+  .pt-akinaigp-box .pt-textbox .pt-text {
+    font-size: 20px;
+    padding: 0px;
+  }
+  .pt-akinaigp-awardshops {
+    display: grid;
+    grid-template-rows: subgrid;
+    grid-row: span 6;
+    gap: 0px;
+  }
+
+  .pt-akinaigp-title {
+    margin: 80px 0px 40px;
+    font-size: 32px;
+    padding:0px 50px;
+  }
+
+  .pt-awardyear {
+    margin: 40px 0px 40px;
+    font-size: 32px;
+  }
+
+  .pt-gp-image {
+    padding:0px 0px 0px;
+  }
+
+  .pt-shop-location {
+    padding: 24px 0px 4px;
+    font-size: 16px;
+  }
+
+  .pt-shop-name {
+    font-size: 40px;
+    margin-bottom: 40px;
+  }
+
+  /*1180px以下のgridの記述*/
+  @media screen and (max-width: 1180px){
+    
+    .pt-akinaigp-box {
+      margin: 0px 0px 80px;
+      padding: 0px 50px 0px;
+      display: grid;
+      column-gap: 40px;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .pt-akinaigp-box .pt-textbox .pt-text {
+      font-size: 16px;
+      padding: 0px;
+      /* position: relative; */
+    }
+
+    .pt-akinaigp-title {
+      font-size: 32px;
+    }
+    .-responsive {
+      display: block;
+    }
+
+    .pt-shop-location {
+      font-size: 14px;
+    }
+
+    .pt-shop-name {
+      font-size: 32px;
+    }
+
+    /* .pt-shop-link {
+      position: absolute;
+      bottom: -40px;
+    } */
+
+      .-small a {
+      padding: 10px 16px;
+      font-size: 14px;
+    }
+
+    .-small a span {
+      padding-right: 23px;
+    }
+  }
 }
 
