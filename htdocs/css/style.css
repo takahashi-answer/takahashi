@@ -826,6 +826,7 @@ main iframe {
   top: -40px;
   right: 0px;
 }
+
 @media screen and (min-width: 768px) {/* PCの記述 */
   
   .pt-icon {
@@ -861,13 +862,13 @@ main iframe {
 ***************************************************************************************/
 
 .pt-slider-images {
-  padding:0px 17.5px;
+  padding: 0px 17.5px;
 }
 
 @media screen and (min-width: 768px) {/* PCの記述 */
   
   .pt-slider-images {
-    padding:0px 50px;
+    padding: 0px 50px;
   }
 }
 
@@ -1160,6 +1161,7 @@ main iframe {
 /****************************************************************************************
 ここからラインスタンプのスタイル
 ***************************************************************************************/
+
 .pt-line-stamp {
   margin: 40px 17.5px 0px;
   padding-bottom: 40px;
@@ -1177,8 +1179,8 @@ main iframe {
 ここからタイトルのパーツのスタイル
 ***************************************************************************************/
 
-.big-title {
-  font-size: 40px;
+.pt-big-title {
+  font-size: 24px;
   font-family: "ab-kirigirisu", sans-serif;
   margin: 120px auto;
   color: #F13F24;
@@ -1187,11 +1189,12 @@ main iframe {
 
 @media screen and (min-width: 768px){/* PCの記述　*/
 
-  .big-title {
+  .pt-big-title {
     font-size: 80px;
     margin: 200px auto;
   }
 }
+
 /****************************************************************************************
 ここからパンくずリストのパーツのスタイル
 ***************************************************************************************/
