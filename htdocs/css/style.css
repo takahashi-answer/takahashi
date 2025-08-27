@@ -834,6 +834,7 @@ main iframe {
     top: -100px;
   }
 }
+
 /****************************************************************************************
 ここからテキストボックスとテキストのスタイル
 ***************************************************************************************/
@@ -1257,7 +1258,7 @@ main iframe {
 .-small a {
   padding: 8px 8px;
   font-size: 12px;
-    box-shadow: 1px 1px 0px 0px #F13F24;
+  box-shadow: 1px 1px 0px 0px #F13F24;
 }
 
 .-small a span {
@@ -1434,3 +1435,32 @@ main iframe {
   }
 }
 
+/****************************************************************************************
+ここから２４区おすすめスポットのスタイル
+***************************************************************************************/
+
+.pt-imagetext-image {
+  padding:0px 17.5px;
+  margin-bottom: 40px;
+}
+
+.pt-imagetext-box{
+  margin-top: 40px;
+}
+
+.pt-spot-title {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.pt-spot-map {
+  padding: 0 17.5px;
+  margin-bottom: 80px;
+}
+
+.pt-spot-map iframe {
+  width: 100%;
+  aspect-ratio: 16/9; /*アスペクト比16:9に指定*/
+  border-radius: 12px;
+}
