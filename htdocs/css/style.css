@@ -1528,3 +1528,37 @@ main iframe {
   }
 }
 
+/****************************************************************************************
+ここからコラムページのスタイル
+***************************************************************************************/
+
+.pt-columnlink-box {
+  background-color: #F2E300;
+  margin: 80px 17.5px;
+}
+
+.pt-column-contents{
+  position: relative;
+}
+
+.pt-column-title {
+  margin-top: 8px;
+  font-weight: 700;
+}
+
+.pt-column-tag {
+  font-size: 10px;
+  font-weight: 700;
+  border: 1px solid #000;
+  border-radius: 12px;
+  padding: 4px 12px;
+  background-color: #fff;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+.pt-column-botton {
+  color: #F13F24;
+  text-align: right;
+  padding: 0px 8px 8px 0px;
+}
