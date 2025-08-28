@@ -10,25 +10,73 @@
   <script>
   (function(d) {
     var config = {
-      kitId: 'suy5dlc',
-      scriptTimeout: 3000,
-      async: true
-    },
+        kitId: 'suy5dlc',
+        scriptTimeout: 3000,
+        async: true
+      },
     h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
   })(document);
 </script>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
 
 </head>
-<body>
+<body class="subpage">
 <!--#include virtual="/_include/_inc_header.html" -->
-
   <main>
-    <div class="main-content">
-        <section class="pt-hero-title">
-					<div class="pt-bigtitle">
-						<h1></h1>
+    <section class="pt-hero-title">
+      <h1 class="pt-big-title">アクセス</h1>
+    </section>
+    <div class="pt-breadcrumb">
+      <ol>
+        <li><a href="/index.html">ホーム</a></li>
+        <li><a href="/access/index.html">アクセス</a></li>
+      </ol>
+    </div>
+    <div class="contents-wrap">
+      <section class="contents-box">
+        <div class="pt-icon">
+          <img src="/images/access/access-icon.png" alt="">
+        </div>
+        <h2 class="pt-title">空港からのアクセス</h2>
+        <section class="pt-airportaccess-box">
+          <div class="pt-airport-title">関西国際空港</div>
+          <div class="pt-routemap-image">
+            <div class="pt-routemap-image-pc">
+              <img src="/images/access/pc-kanku.jpg" alt="関西国際空港からの主要駅へのアクセス">
+            </div>
+            <div class="pt-routemap-image-sp">
+              <div class="pt-routemap-images">
+                <img src="/images/access/sp-kanku.jpg" alt="関西国際空港からの主要駅へのアクセス1">
+              </div>
+              <div class="pt-routemap-images">
+                <img src="/images/access/sp-kanku-2.jpg" alt="関西国際空港からの主要駅へのアクセス2">
+              </div>
+            </div>
+          </div>
         </section>
+        <section class="pt-airportaccess-box">
+          <div class="pt-airport-title">大阪国際空港</div>
+          <div class="pt-routemap-image">
+            <div class="pt-routemap-image-pc">
+              <img src="/images/access/pc-itami.jpg" alt="大阪国際空港からの主要駅へのアクセス">
+            </div>
+            <div class="pt-routemap-image-sp">
+              <div class="pt-routemap-images">
+                <img src="/images/access/sp-itami.jpg" alt="大阪国際空港からの主要駅へのアクセス1">
+              </div>
+              <div class="pt-routemap-images">
+                <img src="/images/access/sp-itami-2.jpg" alt="大阪国際空港からの主要駅へのアクセス2">
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+      <div class="pt-iframe-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6560.069678517188!2d135.4958913!3d34.70430120000001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e68d95e3a70b%3A0x1baec822e859c84a!2z5aSn6Ziq6aeF!5e0!3m2!1sja!2sjp!4v1756362388196!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="pt-iframe-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1951.18522851523!2d135.49935871752476!3d34.66759763399024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e71336f37515%3A0x5e5e33a312c32752!2z44Gq44KT44Gw6aeF!5e0!3m2!1sja!2sjp!4v1756362510195!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
     </div>
   </main>
 <!--#include virtual="/_include/_inc_footer.html" -->
