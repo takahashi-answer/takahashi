@@ -424,7 +424,6 @@ th {
 
 header {
   background-color: #50D6E1;
-
 }
 
 .header-content {
@@ -723,8 +722,6 @@ footer {
   }
 } 
 
-
-
 /****************************************************************************************
 ここからメイン共通のスタイル
 ***************************************************************************************/
@@ -761,6 +758,10 @@ main iframe {
 ここからメイン　一番上のコンテンツのスタイル
 ***************************************************************************************/
 
+p {
+  line-height: 1.4;
+}
+
 .pt-lead {
   font-size: 14px;
   font-weight: 700;
@@ -779,6 +780,7 @@ main iframe {
 }
 
 @media screen and (min-width: 768px) {/* PCの記述 */
+
   .pt-lead {
     font-size: 40px;
     padding: 80px 50px 0px;
@@ -830,7 +832,7 @@ main iframe {
 }
 
 @media screen and (min-width: 768px) {/* PCの記述 */
-  
+
   .pt-icon {
     width: 200px;
     top: -100px;
@@ -850,7 +852,7 @@ main iframe {
 }
 
 @media screen and (min-width: 768px) {
-  
+
   .pt-textbox {
     margin: 56px 50px 40px;
   }
@@ -869,7 +871,6 @@ main iframe {
 }
 
 @media screen and (min-width: 768px) {/* PCの記述 */
-  
   .pt-slider-images {
     padding: 0px 50px;
   }
@@ -913,7 +914,7 @@ main iframe {
 }
 
 @media screen and (min-width: 768px) {/* PCの記述 */
-  
+
   .pt-linkbutton {
     font-size: 20px;
     margin: 40px 0px 80px;
@@ -937,6 +938,7 @@ main iframe {
 /****************************************************************************************
 ここからWi-Fiの画像のスタイル
 ***************************************************************************************/
+
 .pt-wifiimage {
   padding: 0px 17.5px;
 }
@@ -946,6 +948,7 @@ main iframe {
     padding: 0px 50px;
   }
 }
+
 /****************************************************************************************
 ここからリンクボタン（osakawifi固有のボタン)のスタイル
 ***************************************************************************************/
@@ -1044,11 +1047,8 @@ main iframe {
     height: 56px;
     background-size: 56px 56px;
   }
-}
 
-/*1100px以下でのbutton2の設定*/
-  
-@media screen and (max-width: 1100px) {/* 1100px以下*/
+  @media screen and (max-width: 1100px) {/* 1100px以下*/
 
     .pt-buttonbox {
       display: block;
@@ -1063,8 +1063,12 @@ main iframe {
     .pt-linkbutton2 a {
       border-radius: 30px;
     }
-
   }
+}
+
+/*1100px以下でのbutton2の設定*/
+  
+
 
 /****************************************************************************************
 ここからoficialとfacebook部分固有のスタイル
@@ -1099,7 +1103,7 @@ main iframe {
   .pt-facebook-image {
     margin-top: 0px;
   }
-  
+
   .pt-image-facebook {
     padding: 27px 30px 0px;
     background-color: #fff;
@@ -1241,7 +1245,6 @@ main iframe {
   .pt-breadcrumb ol li::after {
     padding: 0px 16px;
   }
-
 }
 
 /****************************************************************************************
@@ -1259,6 +1262,33 @@ main iframe {
 .-padd {
   padding-top: 56px;
 }
+
+.-pc-br {
+  display: none;
+}
+.-margin {
+  margin-bottom: 18px;
+}
+
+@media screen and (min-width: 768px){/* PCの記述　*/
+
+  .-center {
+    text-align: center;
+  }
+
+  .-pc-br{
+    display: block;
+  }
+
+  .-orange {
+    color: #F13F24;
+  }
+
+  .-margin {
+    margin-bottom: 36px;
+  }
+}
+
 /* あきないグランプリの店へのリンクボタンのスタイル*/
 
 .-small a {
@@ -1280,6 +1310,7 @@ main iframe {
   top: 50%;
   transform: translate(0px, -50%);
 }
+
 @media screen and (min-width: 768px){/* PCの記述　*/
 
   .-small a {
@@ -1287,8 +1318,16 @@ main iframe {
     font-size: 16px;
   }
 
-.-small a span {
+  .-small a span {
     padding-right: 28px;
+  }
+
+  .-center {
+    text-align: center;
+  }
+
+  .-pc-br{
+    display: block;
   }
 }
 
@@ -1542,10 +1581,6 @@ main iframe {
   margin: 80px 17.5px;
 }
 
-.pt-columnlink-box:first-child {
-  margin: 0px 17.5px;
-}
-
 .pt-column-contents {
   border-radius: 0px 0px 20px 20px; 
   background-color: hsl(56, 100%, 47%);
@@ -1557,16 +1592,99 @@ main iframe {
   font-weight: 700;
 }
 
+/*pcの設定*/
+
+@media screen and (min-width: 768px){
+
+  .pt-columnlink-box {
+    margin: 0px 0px;
+  }
+
+  .pt-column-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 100px;
+    row-gap: 100px;
+    margin: 0px 50px;
+  }
+
+  .pt-columnlink-box {
+    margin: 0px 0px;
+    /* display: grid;
+    grid-template-rows: subgrid;
+    grid-row: span 4;
+    gap: 0px; */
+  }
+
+  .pt-columnlink-box a:hover {
+    opacity: 0.75;
+  }
+
+  .pt-column-contents {
+    border-radius: 0px 0px 40px 40px; 
+  }
+}
+
+
+/*column専用のpt-textboxの設定*/
+
+.pt-column-contents .pt-textbox {
+    margin: 21px 16px 0px;
+}
+
+@media screen and (min-width: 768px){
+
+  .pt-column-contents .pt-textbox {
+    margin: 21px 16px 0px;
+  }
+
+  .pt-column-contents .pt-textbox .pt-text {
+    font-size: 16px;
+  }
+}
+
+/*タグの設定*/
+
+.pt-tag {
+  position: absolute;
+  top: 32px;
+  right: 8px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 4px;
+}
+
 .pt-column-tag {
   font-size: 10px;
   font-weight: 700;
   border: 1px solid #000;
-  border-radius: 12px;
-  padding: 4px 12px;
+  border-radius: 10px;
+  padding: 2px 8px;
   background-color: #fff;
-  position: absolute;
-  top: 8px;
-  right: 8px;
+  text-align: center;
+}
+@media screen and (min-width: 768px){/*pcの記述*/
+
+  .pt-tag {
+    position: absolute;
+    top: 32px;
+    right: 8px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 4px;
+  }
+
+  .pt-column-tag {
+    font-size: 14px;
+    padding: 2px 8px;
+  }
+
+  @media screen and (max-width: 920px){/*920px以下の記述*/
+    
+    .pt-column-tag {
+      font-size: 10px;
+    }
+  }
 }
 
 /*記事を読む＞　ボタンの設定*/
@@ -1593,60 +1711,21 @@ main iframe {
   top: 50%;
   transform: translate(0px, -50%);
 }
-
 /*pcの設定*/
-
 @media screen and (min-width: 768px){
-
-  .pt-column-list {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 100px;
-    row-gap: 100px;
-    margin: 0px 50px;
-  }
-
-  .pt-columnlink-box {
-    margin: 0px 0px;
-    }
-
-  .pt-columnlink-box a:hover {
-    opacity: 0.75;
-  }
-
-  .pt-column-contents {
-    border-radius: 0px 0px 40px 40px; 
-  }
-
-/*column専用のpt-textboxの設定*/
-
-  .pt-column-contents .pt-textbox {
-    margin: 32px 16px 16px;
-  }
-
-  .pt-column-contents .pt-textbox .pt-text {
-    font-size: 16px;
-  }
-
-  .pt-column-title {
-    font-size: 24px;
-    padding: 16px;
-  }
-
-  .pt-column-tag {
-    font-size: 14px;
-    top: 16px;    
-  }
 
   .pt-column-botton {
     padding: 0px 16px 16px 0px;
   }
 }
 
-
 /****************************************************************************************
 ここからコラム記事のスタイル
 ***************************************************************************************/
+
+.pt-article-topimage {
+  padding: 17.5px;
+}
 
 .article-block {
   padding: 0px 17.5px;
@@ -1654,11 +1733,25 @@ main iframe {
   position: relative;
 }
 
+.article-block:first-child {
+  padding-top: 40px;
+  margin-top: 0px;
+}
+
+.article-block:last-child {
+  margin-bottom: 40px;
+}
+
 .pt-article-icon {
   position: absolute;
   width: 80px;
   right: 0px;
-  top: 64px;
+  top: 0px;
+}
+
+.article-block:first-child .pt-article-icon {
+  position: absolute;
+  top:40px;
 }
 
 .pt-article-title {
@@ -1672,10 +1765,6 @@ main iframe {
   font-family: "Noto Sans JP", sans-serif;
 }
 
-.article-block .pt-article-title:first-child {
-  padding-top: 56px;
-}
-
 .pt-article-text {
   font-weight: 700;
   font-size: 12px;
@@ -1683,7 +1772,7 @@ main iframe {
 }
 
 .article-block .pt-textbox {
-  margin: 56px 0px 40px;
+  margin: 40px 0px 0px;
   padding: 0px;
 }
 
@@ -1695,11 +1784,34 @@ main iframe {
 .pt-postscript .pt-text span {
   font-family: "ab-kirigirisu", sans-serif;
   color: #F13F24;
+  font-size: 16px;
 }
 
 /*PCのスタイル*/
 
 @media screen and (min-width: 768px){
+
+  .pt-article-topimage {
+    text-align: center;
+    padding: 0px;
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .article-block {
+    padding: 0px 50px;
+    margin: 56px 0px 120px;
+  }
+
+  .article-block:first-child {
+    padding-top: 80px;
+    margin: 0px 0px 120px;
+  }
+
+  .article-block:last-child {
+    margin: 0px;
+    padding: 0px 50px 80px;
+  }
 
   .pt-article-title {
     font-size: 40px;
@@ -1713,23 +1825,24 @@ main iframe {
     font-size: 24px;
   }
 
-  .article-block {
-    padding: 0px 50px;
-    margin: 56px 0px 64px;
-  }
-
   .pt-article-icon {
     width: 200px;
-    top: 32px;
+    top: -80px;
+  }
+
+  .article-block:first-child .pt-article-icon {
+    position: absolute;
+    top:24px;
   }
 
   .article-block .pt-textbox {
-    margin: 80px 0px 40px;
+    margin: 40px 0px;
   }
 
   .pt-postscript {
     padding: 80px 50px 64px;
     font-size: 24px;
+    text-align: center;
   }
 
   .pt-postscript .pt-text span {
@@ -1814,14 +1927,37 @@ main iframe {
   }
 
   .pt-iframe-map {
-    padding: 0px 250px;
+    padding: 0px 50px;
     margin: 40px 0px;
   }
 
-  @media screen and (max-width: 1200px){
-    
-    .pt-iframe-map {
-      padding:0px 50px;
-    }
+  .pt-iframe-map iframe {
+    aspect-ratio: 5/2;
+  }
+
+}
+/****************************************************************************************
+ここから大阪商店会についてのスタイル
+***************************************************************************************/
+
+.pt-syotenkai-text {
+  color: #F13F24;
+  font-weight: 700;
+  padding: 0px 17.5px;
+}
+
+.pt-syotenkai-image {
+  padding: 0px 17.5px;
+}
+
+@media screen and (min-width: 768px){
+
+  .pt-syotenkai-image {
+    padding: 0px 50px;
+  }
+
+  .pt-syotenkai-text {
+    font-size: 32px;
+    padding: 0px 50px;
   }
 }
