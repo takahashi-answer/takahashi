@@ -1577,18 +1577,17 @@ p {
 ここからコラムページのスタイル
 ***************************************************************************************/
 
-.pt-columnlink-box {
-  margin: 80px 17.5px;
-}
 
-.pt-column-contents {
+.pt-columnlink-box {
+  margin: 0px 17.5px 80px;
   border-radius: 0px 0px 20px 20px; 
   background-color: hsl(56, 100%, 47%);
-  position: relative;
 }
 
+
+
 .pt-column-title {
-  padding: 8px 8px;
+  padding: 16px 16px;
   font-weight: 700;
 }
 
@@ -1596,49 +1595,71 @@ p {
 
 @media screen and (min-width: 768px){
 
-  .pt-columnlink-box {
-    margin: 0px 0px;
-  }
-
   .pt-column-list {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 100px;
-    row-gap: 100px;
-    margin: 0px 50px;
+    row-gap: 0px;
+    margin: 0px auto;
+    max-width: 1200px;
   }
 
-  .pt-columnlink-box {
-    margin: 0px 0px;
-    /* display: grid;
+  .pt-columnlink-box:nth-child(1) {
+    margin-top: 0px;
+  }
+
+  .pt-columnlink-box:nth-child(2) {
+    margin-top: 0px;
+  }
+
+    .pt-columnlink-box {
+    display: grid;
     grid-template-rows: subgrid;
-    grid-row: span 4;
-    gap: 0px; */
+    grid-row: span 5;
+    margin: 100px 0px 0px;
+    row-gap: 0px;
+    border-radius: 0px 0px 40px 40px;
   }
 
-  .pt-columnlink-box a:hover {
+  /* .pt-columnlink-box a:hover {
+    opacity: 0.75;
+  } */
+
+  .pt-columnlink-box:hover .pt-column-image {
+    background-color: #fff;
+  }
+
+  .pt-columnlink-box:hover .pt-column-image img {
     opacity: 0.75;
   }
 
-  .pt-column-contents {
-    border-radius: 0px 0px 40px 40px; 
+  .pt-columnlink-box:hover .pt-column-title {
+    opacity: 0.75;
+  }
+
+  .pt-columnlink-box:hover .pt-tag {
+    opacity: 0.75;
+  }
+
+  .pt-columnlink-box:hover .pt-textbox {
+    opacity: 0.75;
+  }
+
+  .pt-columnlink-box:hover .pt-column-botton {
+    opacity: 0.75;
   }
 }
 
 
 /*column専用のpt-textboxの設定*/
 
-.pt-column-contents .pt-textbox {
-    margin: 21px 16px 0px;
+.pt-columnlink-box .pt-textbox {
+  margin: 21px 16px 0px;
 }
 
 @media screen and (min-width: 768px){
 
-  .pt-column-contents .pt-textbox {
-    margin: 21px 16px 0px;
-  }
-
-  .pt-column-contents .pt-textbox .pt-text {
+  .pt-columnlink-box .pt-textbox .pt-text {
     font-size: 16px;
   }
 }
@@ -1646,12 +1667,11 @@ p {
 /*タグの設定*/
 
 .pt-tag {
-  position: absolute;
-  top: 32px;
-  right: 8px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 4px;
+  justify-content: right;
+  display: flex;
+  flex-wrap: wrap;
+  padding:0px 16px;
+  gap: 8px;
 }
 
 .pt-column-tag {
@@ -1659,30 +1679,28 @@ p {
   font-weight: 700;
   border: 1px solid #000;
   border-radius: 10px;
-  padding: 2px 8px;
+  padding: 2px 4px;
   background-color: #fff;
   text-align: center;
 }
-@media screen and (min-width: 768px){/*pcの記述*/
 
-  .pt-tag {
-    position: absolute;
-    top: 32px;
-    right: 8px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 4px;
-  }
+@media screen and (min-width: 768px){/*pcの記述*/
 
   .pt-column-tag {
     font-size: 14px;
     padding: 2px 8px;
   }
 
-  @media screen and (max-width: 920px){/*920px以下の記述*/
-    
+  @media screen and (max-width: 928px){/*928px以下の記述*/
+
     .pt-column-tag {
       font-size: 10px;
+    }
+
+    .pt-column-title {
+      padding: 8px 8px;
+      font-weight: 700;
+      font-size: 14px;
     }
   }
 }
@@ -1692,7 +1710,7 @@ p {
 .pt-column-botton {
   color: #F13F24;
   text-align: right;
-  padding: 0px 8px 8px 0px;
+  padding: 8px 8px 8px 0px;
   font-weight: 700;
 }
 
@@ -1711,11 +1729,12 @@ p {
   top: 50%;
   transform: translate(0px, -50%);
 }
+
 /*pcの設定*/
 @media screen and (min-width: 768px){
 
   .pt-column-botton {
-    padding: 0px 16px 16px 0px;
+    padding: 16px 16px 16px 0px;
   }
 }
 
@@ -1934,8 +1953,8 @@ p {
   .pt-iframe-map iframe {
     aspect-ratio: 5/2;
   }
-
 }
+
 /****************************************************************************************
 ここから大阪商店会についてのスタイル
 ***************************************************************************************/
