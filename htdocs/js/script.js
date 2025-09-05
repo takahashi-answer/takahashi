@@ -19,7 +19,31 @@ $('.menu-icon').on('click', function() {
 })
 
 // スライダーの設定（swiper）
-const mySwiper = new Swiper('.swiper', {
+const Swiper1 = new Swiper('.-swiper1', {
+  // Optional parameters
+  //If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  //Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  //And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+
+  autoplay: {
+    delay: 5000,
+  },
+
+});
+
+const Swiper2 = new Swiper('.-swiper2', {
   // Optional parameters
   //If we need pagination
   pagination: {
@@ -37,3 +61,5 @@ const mySwiper = new Swiper('.swiper', {
     el: '.swiper-scrollbar',
   },
 });
+
+
