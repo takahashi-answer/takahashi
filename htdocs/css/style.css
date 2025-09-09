@@ -971,11 +971,58 @@ p {
 
 .pt-akinaigp-box .swiper-button-prev {
   opacity: 1;
+  top: 87vw;
 }
 
 .pt-akinaigp-box .swiper-button-next {
   opacity: 1;
+  top: 87vw;
+
 }
+
+/*24区おすすめスポットのスライダーの記述*/
+
+.pt-spot-slider .swiper-button-prev {
+  top: 82vw;
+}
+
+.pt-spot-slider .swiper-button-next {
+  top: 82vw;
+}
+
+.pt-spot-slider .swiper-slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-self: stretch;
+  height: auto;
+}
+
+
+@media screen and (min-width: 768px) {/* PCの記述 */
+
+  .pt-spot-slider .swiper-button-prev {
+    top: 76vw;
+  }
+
+  .pt-spot-slider .swiper-button-next {
+    top: 76vw;
+  }
+}
+
+
+@media screen and (max-width: 500px) {/* spの記述 */
+
+
+  .pt-akinaigp-box .swiper-button-prev {
+    top: 91vw;
+  }
+
+  .pt-akinaigp-box .swiper-button-next {
+    top: 91vw;
+  }
+} 
+
 
 /*スライダーのPCの記述*/
 
@@ -990,7 +1037,8 @@ p {
   .pt-spot-slider .swiper-button-next {
     display: none;
   }
-  .swiper-wrapper {
+
+  .pt-spot-slider .swiper-wrapper {
     position: inherit;
     width: auto;
     height: auto;
@@ -998,64 +1046,8 @@ p {
     display: block;
     transition-property: none;
     transition-timing-function: ease;
-}
+    }
 
-  .pt-imagetext-box { 
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 20px;
-    margin: 64px auto 40px;
-    padding: 0px 50px;
-  }
-
-  .pt-imagetext-box.-reverse .pt-imagetext-image {
-    order:1;
-  }
-
-  .pt-imagetext-box.-reverse .pt-imagetext-text {
-    order:0;
-  }
-
-  .pt-imagetext-image {
-    padding:0px 0px;
-    margin-bottom: 0px;
-  }
-
-  .pt-imagetext-text .pt-textbox {
-    padding: 0px;
-    margin: 0px;
-  }
-
-  .pt-imagetext-text .pt-textbox .pt-text {
-    padding: 0px;
-    margin: 0px;
-  }
-
-  .pt-spot-title {
-    font-size: 32px;
-    margin: 0 auto 56px;
-  }
-
-  .pt-spot-map {
-    padding: 0 50px;
-    margin-bottom: 80px;
-  }
-
-  .pt-spot-map iframe {
-    aspect-ratio: 5/2;
-    border-radius: 32px;
-  }
-}
-
-@media screen and (max-width: 900px){/*900px以下の記述　*/
-
-  .pt-imagetext-text .pt-textbox .pt-text {
-    font-size: 18px;
-  }
-
-  .pt-spot-title {
-    margin: 0 auto 32px;
-  }
 }
 
 /*あきないグランプリのスライダー　swiperを上書きする記述*/
@@ -1500,6 +1492,9 @@ p {
 .-margin {
   margin-bottom: 18px;
 }
+.-last {
+  margin-bottom: 24px;
+}
 
 @media screen and (min-width: 768px){/* PCの記述　*/
 
@@ -1517,6 +1512,9 @@ p {
 
   .-margin {
     margin-bottom: 36px;
+  }
+  .-last {
+    margin-bottom: 64px;
   }
 }
 
@@ -1571,8 +1569,8 @@ p {
 }
 
 .pt-akinaigp-box {
-  margin: 0px 0px 40px;
-  padding: 0px 0px 50px;
+  margin: 0px 0px 0px;
+  padding: 0px 0px 0px;
 }
 
 .pt-awardyear {
@@ -1664,7 +1662,7 @@ p {
 
 }
 
-@media screen and (max-width: 1050px){
+@media (min-width: 768px) and (max-width: 1050px){
 
   .pt-akinaigp-box .pt-textbox .pt-text {
     font-size: 16px;
@@ -1727,9 +1725,19 @@ p {
   text-align: center;
 }
 
+.pt-spot-slider .swiper-wrapper {
+  row-gap: normal;
+  column-gap: normal;
+}
+
+.pt-spot-slider #swiper-wrapper-108ad107c6bb03ec4f {
+  padding: 0px;
+  margin: 0px;
+}
+
 .pt-spot-map {
   padding: 0 17.5px;
-  margin-bottom: 80px;
+  margin-bottom: 24px;
 }
 
 .pt-spot-map iframe {
@@ -1778,23 +1786,33 @@ p {
 
   .pt-spot-map {
     padding: 0 50px;
-    margin-bottom: 80px;
+    margin-bottom: 64px;
   }
 
   .pt-spot-map iframe {
     aspect-ratio: 5/2;
     border-radius: 32px;
   }
+}
 
-  @media screen and (max-width: 900px){/*900px以下の記述　*/
+  @media (min-width: 768px) and (max-width: 1050px){/*1050px以下の記述　*/
 
-    .pt-imagetext-text .pt-textbox .pt-text {
-      font-size: 18px;
-    }
+  .pt-imagetext-text .pt-textbox .pt-text {
+    font-size: 18px;
+  }
 
-    .pt-spot-title {
-      margin: 0 auto 32px;
-    }
+  .pt-spot-title {
+    margin: 0 auto 32px;
+  }
+
+  .pt-imagetext-image {
+  padding:0px 50px;
+  margin-bottom: 32px;
+  }
+
+  .pt-spot-map {
+    padding: 0 50px;
+    margin-bottom: 64px;
   }
 }
 
@@ -1802,14 +1820,12 @@ p {
 ここからコラムページのスタイル
 ***************************************************************************************/
 
-
 .pt-columnlink-box {
   margin: 0px 17.5px 80px;
   border-radius: 0px 0px 20px 20px; 
-  background-color: hsl(56, 100%, 47%);
+  background-color: #F2E300;
+  display: block; 
 }
-
-
 
 .pt-column-title {
   padding: 16px 16px;
@@ -1915,8 +1931,8 @@ p {
     font-size: 14px;
     padding: 2px 8px;
   }
-
-  @media screen and (max-width: 928px){/*928px以下の記述*/
+}
+  @media (min-width: 768px) and (max-width: 928px){/*928px以下の記述*/
 
     .pt-column-tag {
       font-size: 10px;
@@ -1928,7 +1944,7 @@ p {
       font-size: 14px;
     }
   }
-}
+
 
 /*記事を読む＞　ボタンの設定*/
 
@@ -2291,7 +2307,7 @@ p {
   .pt-timeline-wrap {
     background-color: #FFF;
     border-radius: 40px;
-    margin: 40px 50px;
+    margin: 40px 50px 64px;
   }
 
   .pt-timeline-wrapper {

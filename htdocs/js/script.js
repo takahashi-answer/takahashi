@@ -54,30 +54,27 @@ const Swiper1 = new Swiper('.-swiper1', {
 // });
 
 // let SwiperSlider = null; 
-let SwiperSlider = null
+let swiper2 = null;
 
 /* Swiperを作成する関数 */
 function initSwiper() {
-    if( SwiperSlider === null ) {
-        SwiperSlider = new Swiper('.-swiper2' ,{
+    if( swiper2 === null ) {
+        swiper2 = new Swiper('.-swiper2' ,{
         loop: true,
         //Navigation arrows
         navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-      // autoplay: {
-      // delay: 5000,
-      // },
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
     });
   }
 }
 
 /* Swiperを解除する関数 */
 function destroySwiper() {
-    if( SwiperSlider !== null ){
-        SwiperSlider.destroy(false, true);
-        SwiperSlider = null;
+    if( swiper2 !== null ){
+        swiper2.destroy(false, true);
+        swiper2 = null;
   }
 }
 
@@ -92,6 +89,42 @@ $(window).on('load resize',function(){
         destroySwiper();
     }
 });
+
+let swiper3 = null;
+/* Swiperを作成する関数 */
+function initSwiper2() {
+    if( swiper3 === null ) {
+        swiper3 = new Swiper('.-swiper3' ,{
+        loop: true,
+        //Navigation arrows
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+    });
+  }
+}
+
+/* Swiperを解除する関数 */
+function destroySwiper2() {
+    if( swiper3 !== null ){
+        swiper3.destroy(false, true);
+        swiper3 = null;
+  }
+}
+
+/* 【読み込み時と画面リサイズ時】
+画面サイズが768px以下でSwiperを作成
+767px以上の場合はSwiperを解除する */
+$(window).on('load resize',function(){
+    if( $(window).width() <= 1050 ){
+        initSwiper2();
+    }
+    else{
+        destroySwiper2();
+    }
+});
+
 
 
 
